@@ -120,7 +120,7 @@ struct NfpPConfig {
     std::function<void(const ItemGroup &, NfpPConfig &config)> on_preload;
 
     NfpPConfig(): rotations({0.0, Pi/2.0, Pi, 3*Pi/2}),
-        alignment(Alignment::CENTER), starting_point(Alignment::CENTER) {}
+        alignment(Alignment::TOP_LEFT), starting_point(Alignment::TOP_LEFT) {}
 };
 
 /**
