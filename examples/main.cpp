@@ -30,7 +30,7 @@ int main(void /*int argc, char **argv*/) {
     
     std::vector<Item> input = prusaParts();
     
-    size_t bins = libnest2d::nest(input, Box(mm(250), mm(210)), 0, {},
+    size_t bins = libnest2d::nest(input, Box(mm(350), mm(310)), 0, {},
                                   ProgressFunction{[](unsigned cnt) {
           std::cout << "parts left: " << cnt << std::endl;
         }});
